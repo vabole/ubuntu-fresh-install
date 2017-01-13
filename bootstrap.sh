@@ -4,9 +4,9 @@
 #sudo apt update && sudo apt upgrade
 
 #install basics
-sudo apt install vim htop httpie whois zsh 
+sudo apt install -y vim htop httpie whois zsh 
 
 #remove flash in case it was installed
-sudo apt purge flashplugin-installer
+sudo apt purge -y flashplugin-installer
 
 sudo apt autoremove

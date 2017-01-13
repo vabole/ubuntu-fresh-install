@@ -4,7 +4,7 @@ usage:
 on fresh install do:
 
 ```bash
-sudo apt update && sudo apt upgrade && sudo apt install git \
+sudo apt update -y && sudo apt upgrade -y && sudo apt install git -y\
 && git clone https://github.com/vabole/ubuntu-fresh-install.git \
 && sudo ./ubuntu-fresh-install/bootstrap.sh
 ```
