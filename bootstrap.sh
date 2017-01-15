@@ -5,13 +5,12 @@
 
 #install basics
 sudo apt install -y vim htop httpie whois zsh chromium-browser 
-sudo apt install -y zeal default-jre terminator 
+sudo apt install -y zeal default-jre terminator diodon 
 
 #dropbox requires this to check downloaded binaries
 sudo apt install -y python-gpgme 
 #battery saving tools including thinkpad specific
-sudo apt install -y tlp tlp-rdw tp-smapi-dkms acpi-call-dkms
-#unity-tweak-tool nmap
+sudo apt install -y tlp tlp-rdw tp-smapi-dkms acpi-call-dkms nmap
 
 #remove flash in case it was installed
 sudo apt purge -y flashplugin-installer
@@ -47,8 +46,10 @@ sudo tlp start
 
 
 printf "\nChanging shell to zsh\n"
-#chsh -s /usr/bin/zsh
+#chsh -s $(which zsh)
 
+#TODO create index.html with usefull apps to install
+#TODO fix unity-tweak-tool, it breaks now upon install of unity-webapps-common
 echo "Install AirVPN, Sublime, VS Code and WebStorm manually"
 echo "Opening Chrome"
 
