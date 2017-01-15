@@ -5,7 +5,7 @@
 
 #install basics
 sudo apt install -y vim htop httpie whois zsh chromium-browser 
-sudo apt install -y zeal default-jre terminator diodon 
+sudo apt install -y zeal default-jre terminator diodon xclip
 
 #dropbox requires this to check downloaded binaries
 sudo apt install -y python-gpgme 
