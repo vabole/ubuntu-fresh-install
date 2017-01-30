@@ -1,5 +1,7 @@
 script to initialize a fresh ubuntu install
 
+Script was only tested on Ubuntu 16.04
+
 usage:
 on fresh install do:
 
