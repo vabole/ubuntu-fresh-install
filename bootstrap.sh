@@ -3,14 +3,16 @@
 #initial one-liner already got all updates
 #sudo apt update && sudo apt upgrade
 
-#install basics
-sudo apt install -y vim htop httpie whois zsh chromium-browser 
-sudo apt install -y zeal default-jre terminator diodon xclip
+#install basics cli
+sudo apt install -y vim htop zsh xclip
+#baisics gui
+sudo apt install -y zeal default-jre terminator diodon chromium-browser  
 
-#dropbox requires this to check downloaded binaries
-sudo apt install -y python-gpgme 
+#networking tools
+sudo apt install -y whois nmap zmap traceroute wget httpie
+
 #battery saving tools including thinkpad specific
-sudo apt install -y tlp tlp-rdw tp-smapi-dkms acpi-call-dkms nmap
+sudo apt install -y tlp tlp-rdw tp-smapi-dkms acpi-call-dkms 
 
 #remove flash in case it was installed
 sudo apt purge -y flashplugin-installer
@@ -49,7 +51,6 @@ printf "\nChanging shell to zsh\n"
 #TODO create index.html with usefull apps to install
 #TODO fix unity-tweak-tool, it breaks now upon install of unity-webapps-common
 echo "Install Sublime, VS Code and WebStorm manually"
-echo "Opening Chrome"
 
 # https://www.jetbrains.com/webstorm/download/download-thanks.html
 # https://www.sublimetext.com/3
