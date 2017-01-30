@@ -43,18 +43,15 @@ sudo apt autoremove -y
 #start battery service
 sudo tlp start
 
-
-
 printf "\nChanging shell to zsh\n"
 #chsh -s $(which zsh)
 
 #TODO create index.html with usefull apps to install
 #TODO fix unity-tweak-tool, it breaks now upon install of unity-webapps-common
-echo "Install AirVPN, Sublime, VS Code and WebStorm manually"
+echo "Install Sublime, VS Code and WebStorm manually"
 echo "Opening Chrome"
 
 # https://www.jetbrains.com/webstorm/download/download-thanks.html
 # https://www.sublimetext.com/3
 # https://code.visualstudio.com/docs/?dv=linux64_deb
-# Airvpn:  https://eddie.website/download/?platform=linux&arch=x64&ui=ui&format=debian.deb&version=experimental
 # https://www.dropbox.com/install-linux
