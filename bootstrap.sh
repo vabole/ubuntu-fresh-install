@@ -10,7 +10,7 @@ sudo apt-get install apt-transport-https \
 sudo apt-get install software-properties-common
 
 #install basics cli
-sudo apt install -y vim htop zsh xclip
+sudo apt install -y vim htop zsh xclip tree
 #basics gui
 sudo apt install -y zeal default-jre terminator diodon chromium-browser  
 
