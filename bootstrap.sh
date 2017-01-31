@@ -12,7 +12,7 @@ sudo apt-get install software-properties-common
 #install basics cli
 sudo apt install -y vim htop zsh xclip tree
 #basics gui
-sudo apt install -y zeal default-jre terminator diodon chromium-browser  
+sudo apt install -y zeal default-jre terminator diodon 
 
 #networking tools
 sudo apt install -y whois nmap zmap traceroute wget httpie
@@ -80,3 +80,7 @@ echo "Install Sublime, VS Code and WebStorm manually"
 # https://www.sublimetext.com/3
 # https://code.visualstudio.com/docs/?dv=linux64_deb
 # https://www.dropbox.com/install-linux
+
+# Docker browser-box
+# Readme: https://github.com/sameersbn/docker-browser-box
+sudo docker pull sameersbn/browser-box:latest
