@@ -69,8 +69,15 @@ sudo apt autoremove -y
 #start battery service
 sudo tlp start
 
-printf "\nChanging shell to zsh\n"
-#chsh -s $(which zsh)
+#install antibody
+curl -sL https://git.io/antibody | bash -s
+echo 'source <(antibody init)' >> ~/.zshrc
+
+#clone carlos0 dotfiles
+
+git clone https://github.com/caarlos0/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+./script/bootstrap
 
 #TODO create index.html with usefull apps to install
 #TODO fix unity-tweak-tool, it breaks now upon install of unity-webapps-common
