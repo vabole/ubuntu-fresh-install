@@ -10,7 +10,7 @@ sudo apt-get install apt-transport-https \
 sudo apt-get install software-properties-common
 
 #install basics cli
-sudo apt install -y vim htop zsh xclip tree
+sudo apt install -y htop zsh xclip tree
 #basics gui
 sudo apt install -y zeal default-jre terminator diodon 
 
@@ -52,6 +52,9 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 #adding tor repo with sources
 sudo add-apt-repository -s 'deb http://deb.torproject.org/torproject.org xenial main' 
 
+#vim repo
+sudo add-apt-repository ppa:jonathonf/vim
+
 #checking key for tor repo
 gpg --keyserver keys.gnupg.net --recv A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89
 gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | sudo apt-key add -
@@ -62,6 +65,7 @@ sudo apt install yarn
 sudo apt install docker-engine
 sudo apt install -y tor deb.torproject.org-keyring 
 sudo apt install -y torbrowser-launcher
+sudo apt install -y vim
 
 #cleanup
 sudo apt autoremove -y
@@ -78,6 +82,12 @@ echo 'source <(antibody init)' >> ~/.zshrc
 git clone https://github.com/caarlos0/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ./script/bootstrap
+
+#install fuzzy finder
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+set rtp+=~/.fzf
+
 
 #TODO create index.html with usefull apps to install
 #TODO fix unity-tweak-tool, it breaks now upon install of unity-webapps-common
