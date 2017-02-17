@@ -78,10 +78,11 @@ curl -sL https://git.io/antibody | bash -s
 echo 'source <(antibody init)' >> ~/.zshrc
 
 #clone carlos0 dotfiles
+#probably better fork those dotfiles first, need to change some defaults  
 
-git clone https://github.com/caarlos0/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
-./script/bootstrap
+# git clone https://github.com/caarlos0/dotfiles.git ~/.dotfiles
+# cd ~/.dotfiles
+# ./script/bootstrap
 
 #install fuzzy finder
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
